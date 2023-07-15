@@ -157,7 +157,7 @@ def main():
                 meta_list = meta_re.findall(decoded_meta)[0]
             except IndexError:
                 print(f'Metadata in blob at Offset: {offset} not understood')
-                meta_list = [None] * 4
+                meta_list = [None] * 5
 
             if args.database:  # Default for now, but CSV a future option
                 apath, unk, fpath, ts, xtra = meta_list
